@@ -25,69 +25,73 @@
     <div class="container">
       <h1 class="page-title">Get In Touch</h1>
       <div class="underline"></div>
-      <p class="page-intro">
+      <p style="margin-bottom: 3rem; max-width: 600px;">
         I’m open to internships, full-time roles, or just chatting about projects.
         Email is usually the best way to reach me.
       </p>
 
       <div class="contact-grid">
         <section>
-          <h2 class="section-heading">Contact Information</h2>
-          <ul class="contact-list">
-            <li>
-              <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
-              <a href="mailto:hypnarow@msu.edu">hypnarow@msu.edu</a>
-            </li>
-            <li>
-              <strong><i class="fa-solid fa-phone"></i> Phone:</strong>
-              <a href="tel:5863398597">(586) 339-8597</a>
-            </li>
-            <li>
-              <strong><i class="fa-brands fa-github"></i> GitHub:</strong>
-              <a href="https://github.com/kevenhypn">github.com/kevenhypn</a>
-            </li>
-            <li>
-              <strong><i class="fa-brands fa-linkedin"></i> LinkedIn:</strong>
-              <a href="https://linkedin.com/in/kevenhyp">linkedin.com/in/kevenhyp</a>
-            </li>
-          </ul>
-
-          <div class="highlight-box">
-            <h3>Current Status</h3>
-            <ul>
-              <li>Information Science student at Michigan State University</li>
-              <li>Open to internship and early career opportunities</li>
-              <li>Based in East Lansing, Michigan</li>
+          <div class="contact-card">
+            <h2 class="section-heading">Contact Info</h2>
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:hypnarow@msu.edu">hypnarow@msu.edu</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:5863398597">(586) 339-8597</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/kevenhypn">github.com/kevenhypn</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com/in/kevenhyp">linkedin.com/in/kevenhyp</a>
+              </li>
             </ul>
+
+            <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #eee;">
+              <h3 style="margin-top:0;">Current Status</h3>
+              <ul style="list-style: disc; padding-left: 1.2rem; color: var(--text-light);">
+                <li>Information Science student</li>
+                <li>Open to early career opportunities</li>
+                <li>Based in East Lansing, MI</li>
+              </ul>
+            </div>
           </div>
         </section>
 
         <section>
-          <h2 class="section-heading">Send a Message</h2>
-          <form class="contact-form">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name">
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="your.email@example.com">
-            </label>
-            <label>
-              Subject
-              <input type="text" name="subject" placeholder="What’s this about?">
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
-            </label>
-            <button type="submit" class="btn btn-primary full-width">
-              Send Message
-            </button>
-          </form>
-          <p class="form-note">
-            This is a simple demo form. For a real response, please email me directly.
-          </p>
+          <div class="contact-card">
+            <h2 class="section-heading">Send a Message</h2>
+            <form class="contact-form" action="#" method="POST">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="your.email@example.com" required>
+              </label>
+              <label>
+                Subject
+                <input type="text" name="subject" placeholder="What’s this about?">
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary full-width" style="margin-top: 1rem;">
+                Send Message
+              </button>
+            </form>
+            <p style="font-size: 0.8rem; color: #888; margin-top: 1rem; text-align: center;">
+              This is a demo form. Please email me directly for a real response.
+            </p>
+          </div>
         </section>
       </div>
     </div>
@@ -96,27 +100,27 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <h3 class="footer-logo">kev.dev</h3>
+        <h3 class="footer-heading">kev.dev</h3>
         <p class="footer-text">
           Building straightforward, reliable solutions for the modern web.
         </p>
       </div>
       <div>
         <h4 class="footer-heading">Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <nav class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
       <div>
         <h4 class="footer-heading">Connect</h4>
-        <ul class="footer-links">
-          <li><a href="mailto:hypnarow@msu.edu">Email</a></li>
-          <li><a href="https://github.com/kevenhypn">GitHub</a></li>
-          <li><a href="https://linkedin.com/in/kevenhyp">LinkedIn</a></li>
-        </ul>
+        <nav class="footer-links">
+          <a href="mailto:hypnarow@msu.edu">Email</a>
+          <a href="https://github.com/kevenhypn">GitHub</a>
+          <a href="https://linkedin.com/in/kevenhyp">LinkedIn</a>
+        </nav>
       </div>
     </div>
     <div class="footer-bottom">
