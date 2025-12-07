@@ -1,8 +1,3 @@
-/* styles.css */
-/* Color palette:
-   #161925 (dark), #23395B, #406E8E, #8EA8C3, #CBF7ED
-*/
-
 *,
 *::before,
 *::after {
@@ -36,8 +31,6 @@ a:hover {
   padding: 0 1.5rem;
 }
 
-/* Header / nav */
-
 .site-header {
   background-color: #23395B;
   color: #ffffff;
@@ -51,9 +44,13 @@ a:hover {
 }
 
 .logo {
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+  height: 40px; 
 }
 
 .main-nav {
@@ -74,7 +71,6 @@ a:hover {
   color: #CBF7ED;
 }
 
-/* Sections */
 
 .section {
   padding: 4rem 0;
@@ -94,7 +90,6 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Hero */
 
 .hero {
   padding: 5rem 0 4rem;
@@ -128,7 +123,6 @@ a:hover {
   flex-wrap: wrap;
 }
 
-/* Buttons */
 
 .btn {
   display: inline-block;
@@ -164,7 +158,6 @@ a:hover {
   width: 100%;
 }
 
-/* Stats */
 
 .stats-section {
   background-color: #8EA8C3;
@@ -189,13 +182,12 @@ a:hover {
   color: #23395B;
 }
 
-/* About */
 
 .about-grid {
   display: grid;
   grid-template-columns: 1.1fr 2fr;
   gap: 2.5rem;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 2.5rem;
 }
 
@@ -220,7 +212,6 @@ a:hover {
   margin: 0.25rem 0;
 }
 
-/* Skills */
 
 .skills-section {
   margin-top: 2rem;
@@ -254,7 +245,6 @@ a:hover {
   margin-bottom: 0.25rem;
 }
 
-/* Highlight box */
 
 .highlight-box {
   margin-top: 2.5rem;
@@ -278,7 +268,6 @@ a:hover {
   margin-bottom: 0.35rem;
 }
 
-/* Projects */
 
 .page-intro {
   max-width: 650px;
@@ -296,6 +285,20 @@ a:hover {
   border-radius: 1rem;
   padding: 1.5rem 1.75rem;
   background-color: #ffffff;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.project-image {
+  width: 100%;
+  height: 300px;       
+  object-fit: cover;    
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .project-title {
@@ -321,7 +324,6 @@ a:hover {
   color: #23395B;
 }
 
-/* Contact */
 
 .contact-grid {
   display: grid;
@@ -378,13 +380,12 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-/* Footer */
 
 .site-footer {
   background-color: #161925;
   color: #ffffff;
   padding: 2.5rem 0 1rem;
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
 
 .footer-inner {
@@ -404,7 +405,7 @@ a:hover {
 
 .footer-heading {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0 0.5rem;
 }
 
 .footer-links {
@@ -433,7 +434,6 @@ a:hover {
   margin-top: 1.5rem;
 }
 
-/* Responsive */
 
 @media (max-width: 800px) {
   .nav-container {
